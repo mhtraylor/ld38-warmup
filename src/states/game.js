@@ -1,7 +1,5 @@
 /* globals __DEV__ */
 import Phaser from 'phaser'
-// import Mushroom from '../sprites/Mushroom'
-import DevLeagueLogo from '../sprites/DevLeagueLogo'
 import George from '../sprites/george'
 
 export default class extends Phaser.State {
@@ -17,15 +15,6 @@ export default class extends Phaser.State {
     banner.fill = '#77BFA3'
     banner.smoothed = false
     banner.anchor.setTo(0.5)
-
-    // this.devLeagueLogo = new DevLeagueLogo({
-    //   game: this,
-    //   x: this.world.centerX,
-    //   y: this.world.centerY,
-    //   asset: 'devLeagueLogo'
-    // })
-    //
-    // this.game.add.existing(this.devLeagueLogo)
 
     this.george = new George(
       this,
@@ -47,16 +36,16 @@ export default class extends Phaser.State {
       this.game.debug.spriteInfo(this.george, 32, 32)
     }
 
-    if (this.upKey.isDown) {
-      this.george.y--
-    } else if (this.downKey.isDown) {
-      this.george.y++
-    }
+    // if (this.upKey.isDown) {
+    //   this.george.y--
+    // } else if (this.downKey.isDown) {
+    //   this.george.y++
+    // }
 
-    if (this.leftKey.isDown) {
-      this.george.x--
-    } else if (this.rightKey.isDown) {
-      this.george.x++
-    }
+    // if (this.leftKey.isDown) {
+    //   this.george.x--
+    // } else if (this.rightKey.isDown) {
+    //   this.george.x++
+    // }
   }
 }
