@@ -14,6 +14,7 @@ export default class extends Phaser.State {
     // load your assets
     //
     this.load.image('devLeagueLogo', 'assets/images/devleague.png')
+    this.load.image('george-test', 'assets/images/george-test.png')
   }
 
   create () {
